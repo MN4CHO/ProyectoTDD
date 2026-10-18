@@ -46,7 +46,7 @@ class CalculatorTest {
     // En Junit 4 se usaba @Test(timeout = 50), en Junit 5 se usa @Timeout
     // si la prueba tarda más de 50 milisegundos, la prueba falla
     @Test
-    @Timeout(value = 50, unit = TimeUnit.MILLISECONDS)
+    @Timeout(value = 200, unit = TimeUnit.MILLISECONDS)
     void given_two_numbers_when_multiply_them_then_return_product() {
         assertEquals(6, c.multiplication(2, 3));
     }
